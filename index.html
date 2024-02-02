@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sports Buddy</title>
+</head>
+<body>
+
+  <div id="app">
+    <header>
+      <h1>Sports Buddy</h1>
+    </header>
+    <main>
+      <section id="profile-section">
+        <h2>Your Profile</h2>
+        <label for="sports-select">Choose your sports:</label>
+        <select id="sports-select" multiple>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+          <option value="tennis">Tennis</option>
+          <!-- Add more sports as needed -->
+        </select>
+        <label for="ability-select">Select your ability level:</label>
+        <select id="ability-select">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <button onclick="updateProfile()">Update Profile</button>
+      </section>
+
+      <section id="matching-section">
+        <h2>Find Your Sports Buddy</h2>
+        <div id="matches-container">
+          <!-- Matched users will be displayed here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
